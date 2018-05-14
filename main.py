@@ -8,6 +8,10 @@ def res_h(message):
 def res_r(message):
     message.send("(*>_<*)ﾉ 了解デス")
 
+@listen_to(r'^oha$')
+def res_oha(message):
+    message.send("(･ω･)/ｵﾊﾖ-")
+
 @listen_to(r'^g$')
 def res_g(message):
     message.send("∠(｀・ω・´) goodデス！")
