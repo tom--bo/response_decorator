@@ -24,10 +24,10 @@ patterns = {
     "yy": "ヽ(^。^)ノﾜｲﾜｲ",
 }
 
-msg_pattern = r''
+msg_pattern = r'^$'
 
 for p in patterns:
-    msg_pattern += '^' + p + '$|'
+    msg_pattern += '|^' + p + '$'
 
 @listen_to(msg_pattern)
 def res(msg):
