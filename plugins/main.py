@@ -33,7 +33,7 @@ for p in patterns:
 def res(msg):
     msg.send(patterns[msg.body['text']])
 
-@listen_to(r'help')
+@listen_to(r'^help$')
 def help_res(msg):
     res = ''
     for p in patterns:
